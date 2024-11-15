@@ -122,6 +122,8 @@ width:100%;
 
 
 .todo-container {
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin-top: 20px;
   
@@ -141,7 +143,7 @@ width:100%;
   background-color: black;
   width:5vw;
   height:5vh;
-  border: 0.1vw solid #c78cf4;
+  border: 0.2vw solid #c78cf4;
 }
 
 
@@ -179,10 +181,23 @@ width:100%;
 }
 
 
+.responsive-image {
+  display: none; /* Hide by default */
+}
+
 /*holy moly*/
 @media screen and (max-width:768px){
-  body {
-    background-image: url("images/vro77q0kjtl71.png");
+  body { 
+    background-image: url("https://64.media.tumblr.com/f8cc0270992004f39a1a9ae13e145074/cc92213cc1174d1a-b4/s1280x1920/aa8620418e48e93b36d6a54737cda1235d4d420a.gif");
+    
   }
-     
+  .responsive-image {
+    display: block; /* Show the image when media requirements are met */
+    width: 100%; /* Optional: Make the image responsive */
+    max-width: 100%; /* Prevent it from exceeding the screen width */
+    height: auto; /* Maintain aspect ratio */}
+}
+
+p {
+  display: block;
 }
