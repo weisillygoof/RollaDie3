@@ -5,31 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script src="./script.js"></script>
   </head>
-  <header>
-    <ul>
-      <nav class="rectangle1">
-        <li><a href=index.html><img class="navimg" src="https://cdn-icons-png.flaticon.com/512/6545/6545894.png"></a></li>
-        
-      </nav>
-    </ul>
-  </header>
-  <body>
+  
+  <body background="https://scontent.fosl2-1.fna.fbcdn.net/v/t39.30808-6/409000289_737032588468628_6438972102714165455_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lZNLI7-WcgwQ7kNvgGhIEvY&_nc_zt=23&_nc_ht=scontent.fosl2-1.fna&_nc_gid=AN5A5RUdmp-ForZI7V9HC9B&oh=00_AYBVZpM4VqK9DLgAvZzL-1P_irArZhX0k8DOQ0S8ToBdNA&oe=673CF7EE">
+    <header>
+        <ul>
+          <nav class="nav1">
+            <li class="navimg1"><a href=index.html><img class="navimg" src="https://cdn-icons-png.flaticon.com/512/6545/6545894.png"></a></li>
+            <li class="navimg2"><a href=index2.html><img class="navimg" src="images/Group 1.png"></a></li>
+          </nav>
+        </ul>
+    </header>
+
     <main>
 
     <div class="container">
-        <button class="button1" onclick="rolldie()"><span class="buttontext">Roll a Die</span></button>
+        <button class="button1" onclick='rollDie()'><span class="buttontext">Roll a Die</span></button>
         
         <div class="diceContainer">
           <img class="Diceimg" src="images/Diceimg.png" alt="Dice Face"/>
-          <div class="diceResult">You rolled: 1</div>
+          <div class="diceResult" id="diceResult">You rolled: 1</div>
         </div>
 
     </div>
 
     </main>
-  </body>
-  
+  </body>  
 </html>
-
